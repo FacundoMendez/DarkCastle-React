@@ -1,0 +1,149 @@
+.container2{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  border: 20px groove rgb(24, 24, 24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.container2 h1{
+  font-size: 4rem;
+  color: rgb(109, 108, 108);
+  text-shadow: 0 0 .5rem black;
+  letter-spacing: 1px;
+  filter: drop-shadow(0 0 30px rgb(153, 28, 255)) brightness(130%);
+}
+
+
+/* slider */
+
+.container2-slider{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .wrapper {
+    display: flex;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    user-select: none;
+  }
+  
+  .wrapper .slider {
+    display: flex;
+    position: absolute;
+    left: 0;
+    transform: translateX(0);
+    will-change: transform;
+  }
+  
+  .wrapper .slider .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    transform: translateY(0) rotate(0);
+  
+  }
+  .wrapper .slider .slide img {
+    background-color: #00000000;
+    object-fit: cover;
+  }
+  
+  .wrapper .buttons {
+    z-index: 1;
+    
+    
+  }
+  .wrapper .buttons .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    font-size: 3rem;
+    color: #fcefff;
+    background-color: #0000003d;
+    box-shadow: 0 0 1.5rem #f3c5ff;
+    border: none;
+    border-radius: 15px;
+    transition: all .4s ease-in-out;
+    margin:0 4rem;
+  }
+  
+  .arrow {
+    font-weight: bold;
+    font-size:8rem;
+    padding: .5rem 1rem; 
+    transition: all .4s ease-in-out;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .arrow:hover {
+    color: #f7f7f7;
+    box-shadow: 0 0 5px #e0e0e0cc, 0 0 25px #dfdfdfda, 0 0 50px #9858ffc7, 0 0 200px #03f4e041;
+    border-radius: 15px;
+    transition: all .4s ease-in-out;
+  }
+  
+  
+  .arrow:active {
+    font-size: 7.7rem;
+  }
+  
+  .wrapper .buttons .button--prev {
+    left: 45.5rem;
+  
+  }
+  .wrapper .buttons .button--next {
+    right: 45.5rem;
+  }
+  @keyframes motion-blur {
+    0% {
+      filter: blur(20px) ;
+   }
+    15% {
+      filter: blur(30px);
+      
+   }
+    30% {
+      filter: blur(40px);
+      
+   }
+    45% {
+      filter: blur(50px);
+   }
+    60% {
+      filter: blur(60px);
+     
+   }
+    75%, 100% {
+      opacity: 0;
+      filter: blur(100px);
+  
+  
+   }
+  }
+
+  /* config cards */
+
+.slider img{
+    filter: contrast(115%) drop-shadow(0 0 1px rgb(2, 2, 2));
+    object-fit: cover;
+    width: 55rem;
+}
