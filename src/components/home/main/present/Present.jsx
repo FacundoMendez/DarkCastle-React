@@ -1,12 +1,13 @@
 import React from 'react'
 import "./present.css"
-import Slider from '../slider/Slider'
+import Slider3Stars from '../slider/Slider3stars'
+
 
 
 const Present = () => {
   return (
     <div className="present">
-        <Slider/>
+        <Slider3Stars/>
     </div>
   )
 }

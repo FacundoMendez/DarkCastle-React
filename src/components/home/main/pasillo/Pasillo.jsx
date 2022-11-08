@@ -4,11 +4,13 @@ import videoCofres from "./src/videos/cofres.mp4"
 import pasilloImg from "./src/img/pasilloCastle1.png"
 import ojosImg from "./src/img/ojos.png"
 import pasilloFuncional from './pasilloFuncional'
+import enterCofres from './enterCofres/enterCofres'
 
 const Pasillo = () => {
 
     useEffect(()=>{
         pasilloFuncional()
+        enterCofres()
     },[])
 
   return (
