@@ -1,12 +1,6 @@
-import React, {useState, useEffect, Suspense} from 'react'
-import sliderFuncional from './sliderFuncional'
-import { FaAngleLeft, FaAngleRight  } from "react-icons/fa";
+import React, { Suspense} from 'react'
 import "./slider.css"
-import { Splide, SplideSlide } from '@splidejs/react-splide';
 import Spinner from '../../preload/spinner/Spinner';
-import '@splidejs/splide/css/sea-green';
-import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
-
 
 
 import reaperRuby2 from "./src/2starsRubi/Reaper2Stars.png"
@@ -60,264 +54,62 @@ import reaperDiamond3 from "./src/3starsDiamante/Reaper3Stars.png"
 import warriorDiamond3 from "./src/3starsDiamante/Sorcerer3Stars.png"
 import sorcererDiamond3 from "./src/3starsDiamante/Warrior3Stars.png"
 
-
+import videoRayos from "./src/relampago.mp4"
 
 const Slider3Stars = () => {
 
    
   return (
-
-
     <Suspense fallback={<Spinner/>}>
+        <div className="containerSlider">
+            <video src={videoRayos} loop autoPlay></video>
+            <div className="wrapper">
+                <div className="slider">
+                    <ul className="slide">
 
+                        <li><img className="imgSlider" src={reaperRuby3} alt="background Slider 2"/></li>
+                        <li><img className="imgSlider" src={warriorRuby3} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={sorcererRuby3} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={reaperEsmeralda3} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={warriorEsmeralda3} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={sorcererEsmeralda3} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={reaperObsidiana3} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={warriorObsidiana3} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={sorcererObsidiana3} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={reaperDiamond3} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={warriorDiamond3} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={sorcererDiamond3} alt="background Slider 3"/></li>
+                        
+                        <li><img className="imgSlider" src={reaperRuby2} alt="background Slider 2"/></li>
+                        <li><img className="imgSlider" src={warriorRuby2} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={sorcererRuby2} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={reaperEsmeralda2} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={warriorEsmeralda2} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={sorcererEsmeralda2} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={reaperObsidiana2} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={warriorObsidiana2} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={sorcererObsidiana2} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={reaperDiamond2} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={warriorDiamond2} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={sorcererDiamond2} alt="background Slider 3"/></li>
 
-<Splide className='sliderCards'
-      options={{
-        type: "loop",
-        gap: "0",
-        drag: "free",
-        arrows: false,
-        pagination: false,
-        perPage: 3,
-        autoScroll: {
-          pauseOnHover: false,
-          pauseOnFocus: false,
-          rewind: false,
-          speed: 1
-        }
-      }}
-      extensions={{ AutoScroll }}
-    >
-        <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={reaperRuby3} alt="background Slider 2"/>
-            </Suspense>
-          </SplideSlide>
+                        <li><img className="imgSlider" src={reaperRuby1} alt="background Slider 2"/></li>
+                        <li><img className="imgSlider" src={warriorRuby1} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={sorcererRuby1} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={reaperEsmeralda1} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={warriorEsmeralda1} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={sorcererEsmeralda1} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={reaperObsidiana1} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={warriorObsidiana1} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={sorcererObsidiana1} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={reaperDiamond1} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={warriorDiamond1} alt="background Slider 3"/></li>
+                        <li><img className="imgSlider" src={sorcererDiamond1} alt="background Slider 3"/></li>
 
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={warriorRuby3} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={sorcererRuby3} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-        
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={reaperEsmeralda3} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-        
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={warriorEsmeralda3} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={sorcererEsmeralda3} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={reaperObsidiana3} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={warriorObsidiana3} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={sorcererObsidiana3} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={reaperDiamond3} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={warriorDiamond3} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={sorcererDiamond3} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-
-
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={reaperRuby2} alt="background Slider 2"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={warriorRuby2} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={sorcererRuby2} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-        
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={reaperEsmeralda2} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-        
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={warriorEsmeralda2} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={sorcererEsmeralda2} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={reaperObsidiana2} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={warriorObsidiana2} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={sorcererObsidiana2} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={reaperDiamond2} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={warriorDiamond2} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={sorcererDiamond2} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-
-
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={reaperRuby1} alt="background Slider 2"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={warriorRuby1} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={sorcererRuby1} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-        
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={reaperEsmeralda1} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-        
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={warriorEsmeralda1} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={sorcererEsmeralda1} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={reaperObsidiana1} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={warriorObsidiana1} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={sorcererObsidiana1} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={reaperDiamond1} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={warriorDiamond1} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-          <SplideSlide>
-            <Suspense fallback={<Spinner/>}>
-              <img className="imgSlider" src={sorcererDiamond1} alt="background Slider 3"/>
-            </Suspense>
-          </SplideSlide>
-
-    </Splide>
-
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     </Suspense>
   )

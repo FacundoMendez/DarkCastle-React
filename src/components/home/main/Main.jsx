@@ -1,14 +1,16 @@
-import React from 'react'
+import React, {lazy} from 'react'
+import NftData from './nftData/NftData'
 import Pasillo from './pasillo/Pasillo'
-import Present from './present/Present'
+import PresentDark from './presentDark/PresentDark'
+
+const Slider3Stars = lazy(() => import ('./slider/Slider3stars'))
 
 const main = () => {
   return (
     <main className='main'>
-        <div className="container2">
-          <h1>Container 2 (Presentacion) </h1>
-        </div>
-        <Present/>
+        <PresentDark/>
+        <Slider3Stars/>
+        <NftData/>
         <Pasillo/>
     </main>
   )

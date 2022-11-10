@@ -6,9 +6,10 @@ import Slider3Stars from '../slider/Slider3stars'
 
 const Present = () => {
   return (
-    <div className="present">
-        <Slider3Stars/>
-    </div>
+      <div className="present">
+          <Slider3Stars/>
+      </div>
+
   )
 }
 

@@ -4,7 +4,7 @@ import Header from './headerPresent/Header'
 
 const HeaderMain = () => {
   return (
-    <div>
+    <div className='header'>
         <Nav />
         <Header />
     </div>

@@ -1,0 +1,23 @@
+
+
+.present{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* .present::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.514);
+} */

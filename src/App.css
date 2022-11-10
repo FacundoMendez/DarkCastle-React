@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior:smooth;
-
 }
 
 html{
@@ -43,12 +42,13 @@ body{
     background: transparent;
 }
 
+
 .header{
     overflow: hidden;
 }
 
 
-.Main{
+
+.main {
     background-color: #000000;
-    overflow: hidden;
 }

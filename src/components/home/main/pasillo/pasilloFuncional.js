@@ -42,6 +42,7 @@ const pasilloFuncional = () => {
         }
     })
 
+
     .to(container3Pasillo,{
         duration:20,
         scale:"-=7.2",
