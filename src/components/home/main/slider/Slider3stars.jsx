@@ -3,58 +3,6 @@ import "./slider.css"
 import Spinner from '../../preload/spinner/Spinner';
 
 
-import reaperRuby2 from "./src/2starsRubi/Reaper2Stars.png"
-import warriorRuby2 from "./src/2starsRubi/Sorcerer2Stars.png"
-import sorcererRuby2 from "./src/2starsRubi/Warrior2Stars.png"
-
-import reaperEsmeralda2 from "./src/2starsEsmerald/Reaper2StarsPNG.png"
-import warriorEsmeralda2  from "./src/2starsEsmerald/Sorcerer2StarsPNG.png"
-import sorcererEsmeralda2  from "./src/2starsEsmerald/Warrior2Stars.png"
-
-import reaperObsidiana2 from "./src/2starsObsidian/Reaper2StarsPNG.png"
-import warriorObsidiana2 from "./src/2starsObsidian/Sorcerer2StarsPNG.png"
-import sorcererObsidiana2 from "./src/2starsObsidian/Warrior2StarsPNG.png"
-
-import reaperDiamond2 from "./src/2starsDiamante/Reaper2Stars.png"
-import warriorDiamond2 from "./src/2starsDiamante/Sorcerer2Stars.png"
-import sorcererDiamond2 from "./src/2starsDiamante/Warrior2Stars.png"
-
-
-
-import reaperRuby1 from "./src/1starRubi/Reaper1Star.png"
-import warriorRuby1 from "./src/1starRubi/Sorcerer1Star.png"
-import sorcererRuby1 from "./src/1starRubi/Warrior1Star.png"
-
-import reaperEsmeralda1 from "./src/1starEsmerald/Reaper1StarPNG.png"
-import warriorEsmeralda1  from "./src/1starEsmerald/Sorcerer1StarPNG.png"
-import sorcererEsmeralda1  from "./src/1starEsmerald/Warrior1Star.png"
-
-import reaperObsidiana1 from "./src/1starsObsidian/Reaper1StarPNG.png"
-import warriorObsidiana1 from "./src/1starsObsidian/Sorcerer1StarsPNG.png"
-import sorcererObsidiana1 from "./src/1starsObsidian/Warrior1StarPNG.png"
-
-import reaperDiamond1 from "./src/1starDiamante/Reaper1Star.png"
-import warriorDiamond1 from "./src/1starDiamante/Sorcerer1Star.png"
-import sorcererDiamond1 from "./src/1starDiamante/Warrior1Star.png"
-
-
-import reaperRuby3 from "./src/3starsRubi/Reaper3Stars.png"
-import warriorRuby3 from "./src/3starsRubi/Sorcerer3Stars.png"
-import sorcererRuby3 from "./src/3starsRubi/Warrior3Stars.png"
-
-import reaperEsmeralda3 from "./src/3starsEsmerald/Reaper3Stars.png"
-import warriorEsmeralda3  from "./src/3starsEsmerald/Sorcerer3Stars.png"
-import sorcererEsmeralda3  from "./src/3starsEsmerald/Warrior3Stars.png"
-
-import reaperObsidiana3 from "./src/3starsObsidian/Reaper3Stars.png"
-import warriorObsidiana3 from "./src/3starsObsidian/Sorcerer3Stars.png"
-import sorcererObsidiana3 from "./src/3starsObsidian/Warrior3Stars.png"
-
-import reaperDiamond3 from "./src/3starsDiamante/Reaper3Stars.png"
-import warriorDiamond3 from "./src/3starsDiamante/Sorcerer3Stars.png"
-import sorcererDiamond3 from "./src/3starsDiamante/Warrior3Stars.png"
-
-import videoRayos from "./src/relampago.mp4"
 
 const Slider3Stars = () => {
 
@@ -62,51 +10,52 @@ const Slider3Stars = () => {
   return (
     <Suspense fallback={<Spinner/>}>
         <div className="containerSlider">
-            <video src={videoRayos} loop autoPlay></video>
+            <video src="https://res.cloudinary.com/dvrxw8fbg/video/upload/c_scale,h_1080,q_auto:eco,w_1920/v1668047422/darkCastle/relampago_vtfmzr.mp4" loop autoPlay></video>
+
             <div className="wrapper">
                 <div className="slider">
-                    <ul className="slide">
+                    <div className="slide">
 
-                        <li><img className="imgSlider" src={reaperRuby3} alt="background Slider 2"/></li>
-                        <li><img className="imgSlider" src={warriorRuby3} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={sorcererRuby3} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={reaperEsmeralda3} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={warriorEsmeralda3} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={sorcererEsmeralda3} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={reaperObsidiana3} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={warriorObsidiana3} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={sorcererObsidiana3} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={reaperDiamond3} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={warriorDiamond3} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={sorcererDiamond3} alt="background Slider 3"/></li>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047876/darkCastle/3starsRubi/Reaper3Stars_yubxhc.webp" alt="background Slider 2"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/v1668047874/darkCastle/3starsRubi/Warrior3Stars_mgchlx.png" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047876/darkCastle/3starsRubi/Reaper3Stars_yubxhc.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047873/darkCastle/3starsEsmerald/Sorcerer3Stars_mf25cp.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047873/darkCastle/3starsEsmerald/Warrior3Stars_gwkyjv.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047873/darkCastle/3starsEsmerald/Sorcerer3Stars_mf25cp.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047874/darkCastle/3starsObsidian/Reaper3Stars_ibngep.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047874/darkCastle/3starsObsidian/Warrior3Stars_xuphg2.webp"alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047876/darkCastle/3starsObsidian/Sorcerer3Stars_vqelod.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1080,q_auto:best,w_1080/v1668047870/darkCastle/3starsDiamante/Reaper3Stars_fl8qgd.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1080,q_auto:best,w_1080/v1668047870/darkCastle/3starsDiamante/Warrior3Stars_rqbfqg.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1080,q_auto:best,w_1080/v1668047870/darkCastle/3starsDiamante/Sorcerer3Stars_sbo4wz.webp" alt="background Slider 3"/>
                         
-                        <li><img className="imgSlider" src={reaperRuby2} alt="background Slider 2"/></li>
-                        <li><img className="imgSlider" src={warriorRuby2} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={sorcererRuby2} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={reaperEsmeralda2} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={warriorEsmeralda2} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={sorcererEsmeralda2} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={reaperObsidiana2} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={warriorObsidiana2} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={sorcererObsidiana2} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={reaperDiamond2} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={warriorDiamond2} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={sorcererDiamond2} alt="background Slider 3"/></li>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047871/darkCastle/2starsRubi/Reaper2Stars_no5lan.webp" alt="background Slider 2"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047872/darkCastle/2starsRubi/Warrior2Stars_rmiyek.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047872/darkCastle/2starsRubi/Sorcerer2Stars_fs2anq.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047871/darkCastle/2starsEsmerald/Reaper2StarsPNG_frygba.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047869/darkCastle/2starsEsmerald/Warrior2Stars_xkftbj.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047869/darkCastle/2starsEsmerald/Sorcerer2StarsPNG_gjhwdr.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047872/darkCastle/2starsObsidian/Reaper2StarsPNG_xj3q8w.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047874/darkCastle/2starsObsidian/Warrior2StarsPNG_dsffg5.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047872/darkCastle/2starsObsidian/Sorcerer2StarsPNG_gtrqx8.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1080,q_auto:best,w_1080/v1668047870/darkCastle/2starsDiamante/Reaper2Stars_y7ytjg.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1080,q_auto:best,w_1080/v1668047868/darkCastle/2starsDiamante/Warrior2Stars_kkckvt.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1080,q_auto:best,w_1080/v1668047868/darkCastle/2starsDiamante/Sorcerer2Stars_nu1ojn.webp" alt="background Slider 3"/>
 
-                        <li><img className="imgSlider" src={reaperRuby1} alt="background Slider 2"/></li>
-                        <li><img className="imgSlider" src={warriorRuby1} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={sorcererRuby1} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={reaperEsmeralda1} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={warriorEsmeralda1} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={sorcererEsmeralda1} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={reaperObsidiana1} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={warriorObsidiana1} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={sorcererObsidiana1} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={reaperDiamond1} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={warriorDiamond1} alt="background Slider 3"/></li>
-                        <li><img className="imgSlider" src={sorcererDiamond1} alt="background Slider 3"/></li>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047873/darkCastle/1starRubi/Reaper1Star_plvorp.webp" alt="background Slider 2"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047868/darkCastle/1starRubi/Warrior1Star_f5spoj.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047868/darkCastle/1starRubi/Sorcerer1Star_yyw1sw.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047871/darkCastle/1starEsmerald/Warrior1Star_lqempg.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047871/darkCastle/1starEsmerald/Sorcerer1StarPNG_oqz1wz.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047870/darkCastle/1starEsmerald/Reaper1StarPNG_sjjfyd.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047872/darkCastle/1starsObsidian/Reaper1StarPNG_gvylbd.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047868/darkCastle/1starsObsidian/Sorcerer1StarsPNG_ycav9f.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047868/darkCastle/1starsObsidian/Warrior1StarPNG_xwyrvv.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1920,q_auto:best,w_1920/v1668047868/darkCastle/1starsObsidian/Warrior1StarPNG_xwyrvv.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1080,q_auto:best,w_1080/v1668047869/darkCastle/1starDiamante/Warrior1Star_fwycdb.webp" alt="background Slider 3"/>
+                        <img className="imgSlider" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1080,q_auto:best,w_1080/v1668047869/darkCastle/1starDiamante/Sorcerer1Star_kijpim.webp" alt="background Slider 3"/>
 
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
