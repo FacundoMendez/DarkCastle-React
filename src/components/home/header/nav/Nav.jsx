@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react'
-import navImg from "./img/nav.png"
 import "./nav.css"
 import navScroll from './navScroll'
 
@@ -10,7 +9,7 @@ const Nav = () => {
   return (
     <nav className="nav">
         <div className="nav-img">
-            <img src={navImg} alt="Nav img" />
+            <img src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_480,q_auto:best,w_1817/v1668098585/darkCastle/nav_uq0u9z.webp" alt="Nav img" />
             <div className="nav-list">
                 <ul className="list1">
                     <li><a href="/">Home</a> </li>

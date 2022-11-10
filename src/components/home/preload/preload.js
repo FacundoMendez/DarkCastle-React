@@ -38,6 +38,13 @@ const efectsPreload = () => {
         duration:1.5,       
         opacity:1,
     })
+
+    gsap.to(".container2",{ 
+        delay:5,
+        duration:1.5,       
+        opacity:1,
+    })
+
     tl.to(".nav",{ 
         delay:-1,
         duration:2,

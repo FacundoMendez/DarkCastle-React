@@ -5,24 +5,33 @@ const enterCofres = () => {
     let cofreGris = document.querySelector(".container3__button-cofre-gris");
 
     cofreGris.addEventListener("click", function(){
-    
-/*         gsap.set(".header",{
+
+
+        gsap.to(cofreGris, {
+            
+        })
+
+
+
+
+    /* 
+        gsap.set(".header",{
             display:"none"
-        }) */
+        })
     
 
-/*         .to("body",{
+        .to("body",{
             duration:.5,
             overflow:"hidden",
-        }) */
-/*         .to(".container3__tesoro",{
+        })
+        .to(".container3__tesoro",{
             duration:3.5,
             scale:3,
             x:1300,
             y:-460,
         })
-     */
-     /*    .to(".container3",{
+    
+        .to(".container3",{
             delay:-3.5,
             duration:3,
             opacity:-.5

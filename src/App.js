@@ -1,24 +1,29 @@
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 import './App.css';
-import PreloadCarga from './components/home/preload/PreloadCarga';
-import HeaderMain from './components/home/header/HeaderMain';
-import Main from './components/home/main/Main';
+import Spinner from './components/home/preload/spinner/Spinner';
+
+
+const PreloadCarga = lazy(() => import("./components/home/preload/PreloadCarga"))
+const HeaderMain = lazy(() => import("./components/home/header/HeaderMain"))
+const Main = lazy(() => import("./components/home/main/Main"))
+
 
 function App() {
   return (
-    <div className='app'>
+    <Suspense fallback = {<Spinner/>}>
+      <div className='app'>
 
-      <div className='header'>
-          <PreloadCarga />
-          <HeaderMain />
+        <div className='header'>
+            <PreloadCarga />
+            <HeaderMain />
+        </div>
+
+        <div className='Main'>
+            <Main />
+        </div>
+
       </div>
-
-      <div className='Main'>
-          <Main />
-      </div>
-
-    </div>
-
+    </Suspense>
   )
 }
 

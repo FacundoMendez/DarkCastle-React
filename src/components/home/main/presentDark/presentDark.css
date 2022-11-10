@@ -7,15 +7,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background-image: url("./src/rock222.png");
+    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1542,q_auto:best,w_1920/v1668097957/darkCastle/rock222_xqyjy7.webp");
     background-position: 50% 0%;
     background-size: cover;
     z-index: 99 ;
     top: -7rem;
     filter: hue-rotate(-6deg) contrast(110%) brightness(110%);
+    opacity: 0;
   }
 
-  .container2::after{
+.container2::after{
     content: " ";
     position: absolute;
     width: 100%;
@@ -23,20 +24,19 @@
     left: 0;
     top: -12rem;
     z-index: 100;
-    background-image: url("./src/rock.png");
+    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_405,q_auto:best,w_1920/v1668097955/darkCastle/rock_wijak1.webp");
     background-size: contain;
     background-position: 100% 0%;
     background-repeat: no-repeat;
     filter: hue-rotate(320deg) contrast(100%) brightness(80%);
-
 }
   
   
-  .container2 h1{
-    font-size: 4rem;
-    color: rgb(109, 108, 108);
-    text-shadow: 0 0 .5rem black;
-    letter-spacing: 1px;
-    filter: drop-shadow(0 0 30px rgb(153, 28, 255)) brightness(130%);
-  }
+.container2 h1{
+  font-size: 4rem;
+  color: rgb(109, 108, 108);
+  text-shadow: 0 0 .5rem black;
+  letter-spacing: 1px;
+  filter: drop-shadow(0 0 30px rgb(153, 28, 255)) brightness(130%);
+}
   
