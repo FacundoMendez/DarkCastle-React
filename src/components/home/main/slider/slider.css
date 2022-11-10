@@ -23,9 +23,10 @@
 
 .slider {
   width: 100%;
+  height: 55rem;
   display: flex;
-  overflow: hidden;
   background-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
   backdrop-filter: blur(5px);
   position: relative;
   top: -7rem;
@@ -41,10 +42,13 @@
 
 .imgSlider {
   height: 40rem;
-  padding: 0 15px;
+  padding: 0 5px;
+  filter: contrast(104%) brightness(100%) drop-shadow( 0 0 2px rgba(254, 255, 255, 0.863));
+  animation: blur 4s infinite linear;
 }
 
 @keyframes slideshow {
   0% { transform: translateX(10%); transition: all 1s ease;}
   100% { transform: translateX(-100%); transition: all 1s ease;}
 }
+

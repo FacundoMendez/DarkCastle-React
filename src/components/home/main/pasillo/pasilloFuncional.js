@@ -15,7 +15,6 @@ const pasilloFuncional = () => {
     gsap.set(container3Pasillo,{
         opacity:1,
         scale:8.2,
-        y:"+=20"
     })
 
     gsap.set(container3Tesoro,{
